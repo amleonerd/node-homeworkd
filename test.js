@@ -1,6 +1,3 @@
-const fs = require('fs');
+const add =require('./second');
 
-fs.unlink('/tmp/hello', (err) => {
-  if (err) throw err;
-  console.log('successfully deleted /tmp/hello');
-});
+console.log(add(2, 5));
